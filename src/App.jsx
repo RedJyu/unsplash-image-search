@@ -6,8 +6,8 @@ const App = () => {
   return (
     <main>
       <DarkModeToggle />
-      <Gallery />
       <SearchForm />
+      <Gallery />
     </main>
   );
 };
