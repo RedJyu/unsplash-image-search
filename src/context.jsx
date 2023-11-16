@@ -13,7 +13,9 @@ export const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ isDark, toggleDark }}>
+    <AppContext.Provider
+      value={{ isDark, toggleDark, searchTerm, setSearchTerm }}
+    >
       {children}
     </AppContext.Provider>
   );
