@@ -4,6 +4,7 @@ const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('car');
   const toggleDark = () => {
     const newDark = !isDark;
     setIsDark(newDark);
